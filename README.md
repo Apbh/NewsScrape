@@ -7,7 +7,7 @@ An app that scrapes news from the Toronto Star, world section through Cheerio, w
 
 ## :star: Features
 * Click 'Get Articles' to get the latest news available on the Toronto Star- World section.
-* Save the article, to viewed in the 'Saved Article' section
+* Save the article, to be viewed in the 'Saved Article' section
 * In 'Saved Article' section, choose between saving a note regarding the article or deleting the article
 * Save a title and notes about the article by clicking on 'Article Notes'
 

@@ -1,0 +1,27 @@
+.jumbotron{
+  background-image: url("images/city.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  height:300px;
+}
+
+/* articles style */
+.title-link{
+  color:lightseagreen;
+}
+
+.savedArticles, .btn{
+  border:1px solid lightseagreen;
+  font-weight:bold;
+  color: black;
+}
+
+.caption{
+  border:1px solid white;
+background-color:whitesmoke;
+}
+.scrapeArticles, .save-articles{
+background-color:lightseagreen;
+}
+

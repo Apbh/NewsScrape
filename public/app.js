@@ -8,7 +8,7 @@ $.getJSON("/articles", function (data) {
     // For each one
     for (var i = 0; i < data.length; i++) {
         // Display the apropos information on the page
-        $("#articles").append("<div class='card'><div class='card-body'><a class='title-link' href='https://www.thestar.com" + data[i].link + "'><h5>" + data[i].title + "</h5></a><hr><p class='card-text'>" + data[i].summary + "</p><button id='saveArticle' data-id='" + data[i]._id + "' class='btn btn-outline-primary btn-sm'>Save Article</button></div></div>"
+        $("#articles").append("<div class='card'><div class='card-body'><a class='title-link' target='_blank' href='https://www.thestar.com" + data[i].link + "'><h5>" + data[i].title + "</h5></a><hr><p class='card-text'>" + data[i].summary + "</p><button id='saveArticle' data-id='" + data[i]._id + "' class='btn btn-outline-primary btn-sm'>Save Article</button></div></div>"
 
         )
 
@@ -17,7 +17,7 @@ $.getJSON("/articles", function (data) {
 
 //conduct a new scrape 
 $(document).on("click", ".scrapeArticles", function () {
-    alert("No new articles found.")
+    alert("No new articles found. Please go to Home Page.")
     $.ajax({
         method: "GET",
         url: "/scrape",

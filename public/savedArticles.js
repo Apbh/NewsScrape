@@ -3,7 +3,7 @@ $.getJSON("/saved", function (data) {
   for (var i = 0; i < data.length; i++) {
 
     $("#see-saved-articles").append(
-      "<div style='margin-bottom:60px;'><div class='card'><div class='card-body'><div class='card-title'><a class='title-link' href='" + data[i].link + "'><h5>" + data[i].title + "</h5></a></div><hr><p class='card-text'>" + data[i].summary + "</p><button id='addNote' data-id='" + data[i]._id + "' class='btn-note btn btn-outline-primary'>Article Notes</button><button id='btn-delete' data-id='" + data[i]._id + "' class='btn btn-outline-primary'>Delete From Saved</button></div></div></div>"
+      "<div style='margin-bottom:60px;'><div class='card'><div class='card-body'><div class='card-title'><a class='title-link' target='_blank' href='https://www.thestar.com" + data[i].link + "'><h5>" + data[i].title + "</h5></a></div><hr><p class='card-text'>" + data[i].summary + "</p><button id='addNote' data-id='" + data[i]._id + "' class='btn-note btn btn-outline-primary'>Article Notes</button><button id='btn-delete' data-id='" + data[i]._id + "' class='btn btn-outline-primary'>Delete From Saved</button></div></div></div>"
     );
   }
 

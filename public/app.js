@@ -8,7 +8,7 @@ $.getJSON("/articles", function (data) {
     // For each one
     for (var i = 0; i < data.length; i++) {
         // Display the apropos information on the page
-        $("#articles").append("<div class='card'><div class='card-body'><a class='title-link' href='" + data[i].completeLink + "'><h5>" + data[i].title + "</h5></a><hr><p class='card-text'>" + data[i].summary + "</p><button id='saveArticle' data-id='" + data[i]._id + "' class='btn btn-outline-primary btn-sm'>Save Article</button></div></div>"
+        $("#articles").append("<div class='card'><div class='card-body'><a class='title-link' href='https://www.thestar.com" + data[i].link + "'><h5>" + data[i].title + "</h5></a><hr><p class='card-text'>" + data[i].summary + "</p><button id='saveArticle' data-id='" + data[i]._id + "' class='btn btn-outline-primary btn-sm'>Save Article</button></div></div>"
 
         )
 

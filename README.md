@@ -1,4 +1,4 @@
-# NewsScrape
+# NewScrape
 
 An app that scrapes news from the Toronto Star, world section through Cheerio, while saving it to mongoDB via mongoose.
 

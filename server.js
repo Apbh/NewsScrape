@@ -151,8 +151,9 @@ app.post("/articles/:id", function (req, res) {
 app.put("/saved/:id", function (req, res) {
 
   db.Article
-    .findByIdAndUpdate({ _id: req.params.id }, { $set: { isSaved: true } })
+    .findByIdAndUpdate({ _id: req.params.id }, { $set:{isSaved: true } })
     .then(function (dbArticle) {
+      console.log(dbArticle);
       res.json(dbArticle);
     })
     .catch(function (err) {

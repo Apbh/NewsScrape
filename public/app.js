@@ -17,7 +17,7 @@ $.getJSON("/articles", function (data) {
 
 //conduct a new scrape 
 $(document).on("click", ".scrapeArticles", function () {
-    alert("No new articles found. Please go to Home Page.")
+    alert("No new articles found. Please remain on home page.")
     $.ajax({
         method: "GET",
         url: "/scrape",
@@ -42,14 +42,14 @@ $(document).on("click", "#saveArticle", function () {
             console.log(savedData);
 
             //Trying to change colour of the save button after successfully saving it to db
-            // if (savedData.isSaved === true){
+            // if (savedData.isSaved === true) {
             //     console.log("saved:" + savedData.isSaved);
-            //         // $("#saveArticle").removeclass("btn btn-outline-primary btn-sm");
-            //     // $("#saveArticle").addClass("btn btn-success");
-            //         $("#saveArticle").text("Saved!");
-            //         
+            //     $("#saveArticle").removeClass("btn btn-outline-primary btn-sm");
+            //     $("#saveArticle").addClass("btn btn-success");
+            //     // $("#saveArticle").text("Saved!");
 
-            //     }
+
+            // }
         }
     })
         .done(function (data) {

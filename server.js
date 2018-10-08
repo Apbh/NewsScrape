@@ -12,6 +12,8 @@ var db = require("./models");
 
 var PORT = process.env.PORT || 3000;
 
+var app = express();
+
 // Use morgan logger for logging requests
 app.use(logger("dev"));
 // Use body-parser for handling form submissions

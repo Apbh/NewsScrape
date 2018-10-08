@@ -25,3 +25,10 @@ background-color:whitesmoke;
 background-color:lightseagreen;
 }
 
+/* Styling for notes */
+#titleinput, #bodyinput{
+  width: 100%;
+  margin-bottom:10px;
+  text-align: center;
+}
+
